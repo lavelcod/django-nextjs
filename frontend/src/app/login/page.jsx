@@ -50,7 +50,7 @@ export default function Page() {
           <div className="grid gap-2 text-center">
             <h1 className="text-3xl font-bold">ورود</h1>
             <p className="text-balance text-muted-foreground">
-              Enter your email below to login to your account
+              برای ورود به حساب کاربری، ایمیل خود را در زیر وارد کنید
             </p>
           </div>
           <div className="grid gap-4">
@@ -61,35 +61,35 @@ export default function Page() {
                 </div>
               )}
                     <div className="grid gap-2">
-                    <Label htmlFor="username">Username</Label>
+                    <Label htmlFor="username">نام کاربری</Label>
                     <Input
                         id="username"
                         type="username"
                         name="username"
-                        placeholder="Your username"
+                        placeholder="نام کابری"
                         required
                     />
                     </div>
                     <div className="grid gap-2">
                         <div className="flex items-center">
-                            <Label htmlFor="password">Password</Label>
+                            <Label htmlFor="password">رمز ورود</Label>
                          
                         </div>
-                        <Input placeholder="Your password" id="password" name="password" type="password" required />
+                        <Input placeholder="رمز ورود" id="password" name="password" type="password" required />
               
                     </div>
                
           
                     <Button type="submit" className="w-full">
-                    Login
+                    ورود
                     </Button>
  
             </form>
           </div>
           <div className="mt-4 text-center text-sm">
-            Don&apos;t have an account?{" "}
+            حساب کاربری ندارید؟{" "}
             <Link href="/signup" className="underline">
-              Sign up
+              ثبت نام
             </Link>
           </div>
         </div>
