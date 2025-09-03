@@ -8,12 +8,14 @@ import { ThemeProvider } from "@/components/themeProvider";
 import BaseLayout from "@/components/layout/BaseLayout";
 import { cn } from "@/lib/utils"
 
+import { myFont } from "../ui/fonts";
+
 import "./globals.css";
  
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
+// const fontSans = FontSans({
+//   subsets: ["latin"],
+//   variable: "--font-sans",
+// })
 
 export const metadata = {
   title: "Django x Next.js",
@@ -22,10 +24,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html dir="rtl" lang="fa" suppressHydrationWarning>
+    <html dir="rtl" lang="fa" suppressHydrationWarning className={`${myFont.variable}`}>
       <body className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          "min-h-screen bg-background font-sans antialiased"
         )}>
           <Suspense fallback={<div>Loading...</div>}>
           <ThemeProvider 

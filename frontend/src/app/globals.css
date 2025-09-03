@@ -183,3 +183,10 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @font-face {
+  font-family: 'Iransans';
+  src: url('/fonts/Iransans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
